@@ -1,0 +1,14 @@
+<h1>Dashboard#home</h1>
+
+<table class="table">
+  <tr>
+    <th>Video Title</th>
+    <th>View count</th>
+  </tr>
+  <% @videos.each do |v| %>
+  <tr>
+    <td><%= link_to v.title, v =%></td>
+    <td><%= v.users.count =%></td>
+  </tr>
+  <% end %>
+</table>

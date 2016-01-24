@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  root 'dashboard#home'
+
   resources :users, only: [:index, :show]
   resources :videos, only: [:index, :show]
 

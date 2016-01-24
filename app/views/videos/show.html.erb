@@ -1,2 +1,7 @@
 <h1>Videos#show</h1>
 <p><%= @video.title %></p>
+
+<ul class>
+  <p>Watched by</p>
+  <%= render @video.users %>
+</ul>

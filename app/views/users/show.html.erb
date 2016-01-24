@@ -1,2 +1,7 @@
 <h1>Users#show</h1>
 <p><%= @user.name %></p>
+
+<ul>
+  <p>Watched videos</p>
+  <%= render @user.videos %>
+</ul>

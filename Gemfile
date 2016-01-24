@@ -29,6 +29,10 @@ gem 'bootstrap-sass', '~> 3.3'
 gem 'will_paginate', '~> 3.0'
 gem 'will_paginate-bootstrap', '~> 1.0.1'
 
+# For histogram
+gem "googlecharts", "~> 1.6.12"
+gem "lazy_high_charts", "~> 1.5.4"
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

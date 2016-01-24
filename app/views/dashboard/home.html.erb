@@ -1,6 +1,8 @@
 <% provide(:title, "Dashboard") %>
 <h1 class="page-header">Historgram</h1>
 
+<%= high_chart("bar_chart", @histogram) %>
+
 <table class="table">
   <tr>
     <th>Video Title</th>

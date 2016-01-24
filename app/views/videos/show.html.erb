@@ -1,7 +1,9 @@
 <% provide(:title, @video.title) %>
 <h1 class="page-header"><%= @video.title %></h1>
 
+<%= will_paginate @users, renderer: BootstrapPagination::Rails %>
 <ul class="list-group user-list">
   <h3>Watched by</h3>
-  <%= render @video.users %>
+  <%= render @users %>
 </ul>
+<%= will_paginate @users, renderer: BootstrapPagination::Rails %>

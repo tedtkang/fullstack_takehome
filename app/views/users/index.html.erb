@@ -1,6 +1,8 @@
 <% provide(:title, "All Users") %>
 <h1 class="page-header">All users</h1>
 
+<%= will_paginate @users, renderer: BootstrapPagination::Rails %>
 <ul class="list-group user-list">
   <%= render @users %>  
 </ul>
+<%= will_paginate @users, renderer: BootstrapPagination::Rails %>

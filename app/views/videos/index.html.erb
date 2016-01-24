@@ -1,4 +1,6 @@
-<h1>Videos#index</h1>
-<ul>
-  <%= render @videos %>
+<% provide(:title, "All Videos") %>
+<h1 class="page-header">All videos</h1>
+
+<ul class="list-group video-list">
+  <%= render @videos %>  
 </ul>

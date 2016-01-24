@@ -1,4 +1,6 @@
-<h1>Users#index</h1>
-<ul>
-  <%= render @users %>
+<% provide(:title, "All Users") %>
+<h1 class="page-header">All users</h1>
+
+<ul class="list-group user-list">
+  <%= render @users %>  
 </ul>

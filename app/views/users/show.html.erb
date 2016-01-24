@@ -1,7 +1,7 @@
-<h1>Users#show</h1>
-<p><%= @user.name %></p>
+<% provide(:title, @user.name) %>
+<h1 class="page-header"><%= @user.name %></h1>
 
-<ul>
-  <p>Watched videos</p>
+<ul class="list-group video-list">
+  <h3>Watched videos</h3>
   <%= render @user.videos %>
 </ul>

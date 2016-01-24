@@ -1,0 +1,17 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* Make space for nav-bar */
+body { 
+  padding-top: 70px; 
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.user-list {
+  width: 20%;
+}
+
+.video-list {
+  width: 40%;
+}

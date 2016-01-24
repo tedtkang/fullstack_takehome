@@ -1,7 +1,7 @@
-<h1>Videos#show</h1>
-<p><%= @video.title %></p>
+<% provide(:title, @video.title) %>
+<h1 class="page-header"><%= @video.title %></h1>
 
-<ul class>
-  <p>Watched by</p>
+<ul class="list-group user-list">
+  <h3>Watched by</h3>
   <%= render @video.users %>
 </ul>

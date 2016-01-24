@@ -9,9 +9,10 @@ describe VideosController do
     end
   end
 
+  video = FactoryGirl.create :video
   describe "GET 'show'" do
     it "returns http success" do
-      get 'show'
+      get 'show', id: video.id
       response.should be_success
     end
   end

@@ -9,9 +9,10 @@ describe UsersController do
     end
   end
 
+  user = FactoryGirl.create :user
   describe "GET 'show'" do
     it "returns http success" do
-      get 'show'
+      get 'show', id: user.id
       response.should be_success
     end
   end

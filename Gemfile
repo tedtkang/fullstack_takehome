@@ -4,7 +4,12 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# gem 'sqlite3'
+
+#Using postgres for Heroku
+gem 'pg'
+gem 'ffaker'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -47,7 +52,6 @@ group :development, :test do
   gem 'byebug'
   gem 'rspec', '2.14.1'
   gem 'rspec-rails'
-  gem 'ffaker'
   gem 'factory_girl_rails'
 end
 
